@@ -16,3 +16,26 @@ BOOL ChkVowel ( char cValue )
         return FALSE;
     }
 }
+ 
+int main()
+{
+    char cVal = '\0';
+    BOOL cRet = FALSE;
+
+  
+
+    printf("Enter the letter : ");
+    scanf("%c",&cVal);
+
+      cRet = ChkVowel(cVal);
+
+    if(cRet == TRUE)
+    {
+        printf("%c is vowel ",cVal);
+    }
+    else
+    {
+        printf("%c is not vowel",cVal);
+    }
+ return 0;
+}
