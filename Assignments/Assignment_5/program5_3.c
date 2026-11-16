@@ -1,12 +1,8 @@
 #include <stdio.h>
 
-int main()
+void DisplayGrade(float marks)
+
 {
-    int marks;
-
-    printf("Enter student marks: ");
-    scanf("%d", &marks);
-
     if (marks < 0 || marks > 100)
     {
         printf("Invalid Marks");
@@ -27,10 +23,20 @@ int main()
     {
         printf("Grade D");
     }
-    else
+    else if (marks < 40)
     {
         printf("Fail");
     }
+}
 
+int main()
+{
+    float fValue = 0.0f;
+
+    printf("enter marks :");
+    scanf("%f",&fValue);
+
+    DisplayGrade(fValue);
+    
     return 0;
 }
