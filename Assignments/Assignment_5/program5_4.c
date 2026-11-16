@@ -1,34 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include<stdio.h>
 
 void CheckMultipleDivisibility(int iValue)
 {
-    if (iValue % 3 == 0 && iValue % 5 == 0)
+    if(iValue % 3 == 0 && iValue % 5 == 0)
     {
-        printf("Divisible by Both");
+        printf("Divisible by 3 and 5 both");
     }
-    else if (iValue % 3 == 0)
+    else if(iValue % 3 == 0)
     {
-        printf("Divisible by 3 Only");
+        printf("Divisible by 3");
     }
-    else if (iValue % 5 == 0)
+    else if(iValue % 5 == 0)
     {
-        printf("Divisible by 5 Only");
+        printf("Divisible by 5");
     }
     else
     {
-        printf("Not Divisible by Either");
+        printf("Not Divisible by both");
     }
 }
-
 int main()
 {
-    int iNo;
+    int iValue = 0;
 
-    printf("Enter an integer: ");
-    scanf("%d", &iNo);
-
-    CheckMultipleDivisibility(iNo);
+    printf("Enter the number :");
+    scanf("%d",&iValue);
+ 
+    CheckMultipleDivisibility(iValue);
 
     return 0;
+
 }
